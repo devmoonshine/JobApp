@@ -19,7 +19,3 @@ Route::get('/manager/{application}', 'ManagerController@openFile')->name('file')
 Route::post('/manager', 'UploadController@store')->name('apply');
 
 Auth::routes();
-
-Route::get('importExport', 'ManagerController@importExport');
-//Route::get('downloadExcel/{type}', 'MaatwebsiteDemoController@downloadExcel');
-Route::post('importExcel', 'ManagerController@importExcel');
